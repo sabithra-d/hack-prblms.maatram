@@ -1,0 +1,25 @@
+//TO LOWER CASE
+
+s=input()
+print(s.lower())
+
+//DETECT CAPITAL
+
+s=input()
+if (s.isupper()):
+    print("true")
+elif(s.islower()):
+    print("true")
+elif(s[0].isupper() and s[1:len(s)].islower()):
+    print("true")
+else:
+    print("false")
+    
+ //NUMBER OF SEGMENTS IN A STRING  
+    
+s=input()
+count=0
+s1=s.split()
+for i in range(0,len(s1)):
+    count=count+1
+print(count)
