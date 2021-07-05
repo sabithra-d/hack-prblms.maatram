@@ -1,0 +1,12 @@
+//OBTAIN THE DOMAIN NAME FROM THE URL
+
+s=input()
+s1=s.split('.')
+print(s1[1]+'.'+s1[2])
+
+
+//TO MAKE A FULL URL FROM A STRING
+
+string=input()
+s=string.split("#")
+print("https://"+s[0]+"."+s[1]+"."+s[2]+"/"+s[3]+"/"+s[4]+"/")
