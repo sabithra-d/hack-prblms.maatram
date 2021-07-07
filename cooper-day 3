@@ -1,7 +1,0 @@
-n=int(input())
-if (n != 0):
-    r = n % 10
-    sum=r + 1
-    r1=sum % 10
-    n=n-r1
-print(n)
