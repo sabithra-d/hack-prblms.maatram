@@ -1,0 +1,17 @@
+//PRINT THE MAXIMUM POSIBLE INTEGER
+
+n=int(input())
+if (n != 0):
+    r = n % 10
+    sum=r + 1
+    r1=sum % 10            //35---29
+    n=n-r1                   41---39
+print(n)                     19---19
+
+//PRINT THE MISSING ALBHABETS
+
+s=input()
+s1="abcdefghijklmnopqrstuvwxyz"          //abcd---efghijklmnopqrstuvwxyz
+for i in s1:
+    if i not in s:
+        print(i,end="")
