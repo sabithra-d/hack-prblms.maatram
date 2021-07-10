@@ -1,0 +1,42 @@
+//BUILD AN ARRAY WITH STACK APPLICATION
+
+s=input()
+p=[]
+result=[]
+split_s=s.split("#")
+s1=split_s[0]
+split_s2=s1.split("-")
+#print(split_s2)
+a=int(split_s2[-1])
+#print(a)
+for i in range(1,a+1):
+    p.append(str(i))
+#print(p)
+for i in p:
+    if (i in split_s2):
+        result.append("Push")
+    else:        
+        result.append("Push")
+        result.append("Pop")
+#print(result)
+st=str(result)
+re=st.replace("'",'"')
+#print(re)
+rs=re.replace(" ","")
+print(rs)
+
+//HIGHT CHECKER
+
+s=input()
+l=list(s) 
+#print(l) 
+l1=l.copy() 
+l1. sort() 
+#print(l1) 
+count=0
+for i in range(0,len(l)):
+  if(l[i] != l1[i]):
+    count+=1
+print(count)  
+      
+    
