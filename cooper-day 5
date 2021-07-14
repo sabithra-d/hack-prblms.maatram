@@ -1,0 +1,27 @@
+//Given two stings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
+
+ransomNote=input()
+magazine=input()
+if ransomNote in magazine:             //aa
+    print("true")                        aab
+else:                                  //op:true
+    print("false") 
+    
+//Count Negative Numbers in a Sorted Matrix    
+    
+string=input()
+#print(string)
+s=string.split("#")
+#print(s)
+l=[]
+for i in range(0,len(s)):
+    a1=s[i]
+    for j in a1:
+        l.append(j)                   //4 3 2 -1#3 2 1 -1#1 1 -1 -2#-1 -1 -2 -3
+#print(l)                              //op:8
+count=0
+for i in range(0,len(l)):
+    if l[i] == '-':
+        count+=1
+print(count)    
+    
