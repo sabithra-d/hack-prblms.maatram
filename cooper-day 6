@@ -1,0 +1,32 @@
+num=input()
+num1=num.split()
+#print(num1)
+l=input()
+s=l.split()
+#print(s)
+res=[]
+res1=[]
+for i in range(0,len(num1)):
+    num1[i]=int(num1[i])
+    res1.append(num1[i])
+#print(res1)
+for i in range(0,len(s)):
+    s[i]=int(s[i])
+    res.append(s[i]) 
+#print(res)
+count1=0
+result=[]
+for i in range(0,len(res)):
+     if (count1 != 2):
+        if(res[i] > res1[-1]):
+            count1+=1
+        else:
+            result.append(res[i])   
+#print(result)  
+count=0
+for i in result:
+    count+=1
+print(count)    
+        
+            
+            
