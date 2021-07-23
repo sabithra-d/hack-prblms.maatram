@@ -1,0 +1,21 @@
+###print non repeated elemnts in ascending order.
+
+n=int(input())
+s=input()
+l=[]
+s1=s.split()
+#print(s1)
+for i in range(0,len(s1)):
+    s1[i] = int(s1[i])
+    l.append(s1[i])    
+    
+#print(l)
+l.sort()
+#print(l)
+
+for i in l:
+    if l.count(i)==1:
+        print(i,end=" ")
+        
+  
+    
