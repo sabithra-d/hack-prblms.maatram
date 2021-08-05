@@ -1,0 +1,25 @@
+n=int(input())
+#print(n)
+n1=int(input())
+#print(n1)
+l=input().split()
+x=[int(i) for i in l]
+#print(x)
+count=0
+for i in range(len(x)):
+    if(x[0] % 2 == 0):
+        if(x[i] % 2 != 0):
+            count+=1
+    elif(x[0] % 3 == 0):
+        if(x[i] % 2 != 0 and x[i] % 3 != 0):
+            count+=1
+print(count)
+
+
+//ip:
+1
+10
+14 19 9 17 18 2 16 14 16 7
+
+//op:
+4
