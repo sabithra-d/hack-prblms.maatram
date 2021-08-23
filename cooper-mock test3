@@ -1,0 +1,35 @@
+ip:
+4
+27-01-2017
+17-02-2017
+01-12-0112
+28-01-2017
+op:
+Lucky Day
+Lucky Day
+Lucky Day
+Unlucky Day
+
+
+
+
+n=int(input())
+
+for i in range(n):
+    l=[]
+    l1=[]
+    str=input()
+    for i in str[:6]:
+        if i.isdigit():
+            l.append(i)
+
+    for i in str[6:]:
+        l1.append(i)
+    l.sort()
+    l1.sort()
+    if l == l1:
+        print("Lucky Day")
+    else:
+        print("Unlucky Day")
+
+    
