@@ -1,0 +1,64 @@
+//Given 3 strings , check if the 3rd string contains all characters of string 1 and 2 in any order. If all characters are present , print "Yes" otherwise" print "No".
+
+There should can be any alphanumeric character. note: if any alphanumeric character present in first line or second line string then if the third line string contains the corresponding mapping or vice versa from the list below, then it is taken as valid or return No.
+
+( '#' <=> '$' '!' <=> '@' '%' <=> '*' '^' <=> '&' )
+
+The string s contains uppercase letters only. Length of first and second string would be less than 101.
+
+Input Format
+Line 1 : First string Line 2 : Second string Line 3 : Third string
+
+Constraints
+None
+
+Output Format
+Yes or No
+
+Sample Input 0
+
+SANTACLAUS
+DEDMOROZ
+SANTAMOROZDEDCLAUS
+Sample Output 0
+Yes
+
+Sample Input 1
+
+PAPAINOEL
+JOULUKKUPI
+JOULNAPAOILELUPUKKI
+Sample Output 1
+No
+
+Sample Input 2
+
+B
+A
+AB
+Sample Output 2
+Yes
+
+
+
+n=input()
+n1=input()
+s=input()
+a=len(s)
+#print(a)
+l=[]
+for i in n:
+    l.append(i)
+for j in n1:
+    l.append(j)
+#print(l)
+count=0
+for i in s:
+    if i in l:
+        count+=1
+    else:
+        break
+if count==a:
+    print("Yes")
+else:
+    print("No")
