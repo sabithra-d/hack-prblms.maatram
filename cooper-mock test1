@@ -1,0 +1,44 @@
+n=int(input())
+a=0
+b=0
+r=[]
+c=n-1
+for i in range(n):
+    s=input().split()
+    r.append(s)
+    a+=int(s[i])
+    b+=int(s[c-i])
+print(abs(a-b))
+
+
+#include<stdio.h>
+int main()
+{
+    int n,j;
+    int i=0,rsum=0,lsum=0,farray,sarray;
+    scanf("%d",&n);
+    int a[n][n];
+    for(int farray=0;farray<n;farray++)
+    {
+        for(int sarray=0;sarray<n;sarray++)
+        {
+            scanf("%d",&a[farray][sarray]);
+        }
+    }
+    
+    while(i<n)
+    {
+       rsum=rsum+a[i][i];
+        i++;
+        
+    }
+    j=n-1,i=0;
+    while(i<n)
+    {
+        lsum=lsum+a[i][j];
+        i++;
+        j--;
+    }
+    printf("%d",abs(rsum-lsum));
+    return 0;
+}
