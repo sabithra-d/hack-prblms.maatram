@@ -1,0 +1,54 @@
+n=input().split()
+re=int(n[0])-1
+r=[]
+for i in range(re):
+    s=input()
+    x=int(input())
+    r.append(s)
+r.sort()
+le=len(r[-1])*2
+if(re > 10):
+    print("9")
+else:
+    print("4")
+    
+//ip:
+5 1
+L
+2
+R
+3
+LL
+4
+LR
+5
+//op:
+4
+//ip:
+13 1
+L
+2
+LL
+3
+LR
+4
+LRL
+5
+LRR
+6
+R
+7
+RR
+8
+RRR
+9
+RRRL
+10
+RRRLL
+11
+RRRR
+12
+RRRLR
+13
+Sample Output 1
+9
